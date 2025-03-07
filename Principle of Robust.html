@@ -1,0 +1,146 @@
+<doctype html>
+<html lang="en">
+<head>
+<title>Principle of Robust</title>
+</head>
+<body>
+<head>
+<div id="skipnav"><a href="#Maincontent">Skip to main content</a></div>
+<div role="navigation">
+<ul>
+<li><a href="index.html" target="-blank"> Home</a></li> 
+<li><a href="About us.html" target="-blank"> About us</a></li> 
+<li><a href="Contact us.html" target="-blank"> Contact us</a></li> 
+<li> <a href="Types of screen readers.html" target="-blank"> Screen reader types</a> </li>
+<li><a href="principles of accessibility.html" target="-blank"> accessibility principles</a></li>
+<li><a href="Principle Of Perceivable.html" target="-blank"> Principle Of Perceivable</a></li>
+<li><a href="Operable principle.html" target="-blank"> Operable Principle</a></li>
+<li><a href="Principle of Understandable.html" target="-blank"> Principle of Understandable</a></li>
+<li><a href="Principle of Robust.html" target="-blank"> Principle of Robust</a></li>
+<li><a href="conclusion.html" target="-blank"> Conclusion page</a></li>
+</ul>
+</div>
+<div role="banner">
+<img src="Robustness Principle.jpg" alt="Robustness Principle logo" wirth="100" hight="100">
+</div>
+<div>
+<form>
+<label for="Search"> Search </label>
+<input type="text" id "Search" aria-label="What do you want to search hear">
+<input type="submit" value="search">
+</form>
+</div>
+<div role="main" id="mainContent" tab index="-1">
+<h1>Principle of Robust</h1>
+<p>The Robust principle in the Web Content Accessibility Guidelines (WCAG) ensures that websites, applications, and digital content are designed to be compatible with a wide range of current and future technologies, including assistive technologies like screen readers. A robust design ensures long-term accessibility as new tools, devices, and user agents evolve.</p>
+<h2>Compatible with Assistive Technologies (Guideline 4.1)</h2>
+<img src="Assistive Technologies .jpg" alt="accessibility features for individuals with disabilities like Wheelchair and Screen reader symbols" wirth="100" hight="100">
+<p>Content should be created in a way that allows assistive technologies to understand, process, and interact with it effectively. This requires adherence to established standards and correct use of code.</p>
+<h3>Key Points</h3>
+<ul>
+<li>Use valid, semantic HTML to ensure that assistive technologies can interpret the structure and meaning of content.</li>
+<li>Provide proper names, roles, and values for all user interface components.</li>
+<li>Ensure dynamic content updates (e.g., via JavaScript) are conveyed to assistive technologies.</li>
+</ul>
+<h2>Sub-Guidelines of Robust</h2>
+<ol>
+<li>4.1.1 Parsing</li>
+<p>Ensure that the HTML, CSS, and other code used on the site are free of errors. Broken or invalid code can make content inaccessible for assistive technologies.</p>
+Examples of Parsing</h3>
+<ul>
+<li>Good Practice: Using semantic HTML, such as Header for page headers and Main for main content.</li>
+<li>Bad Practice: Using <div> or <span> elements without proper roles or attributes for interactive elements.</li>
+</ul>
+<li>4.1.2 Name, Role, Value</li>
+<p>All user interface components should have programmatically defined names, roles, and values that assistive technologies can understand.</p>
+<h3>Examples of NAME ROLE STATE VALUE</h3>
+<ul>
+<li>Good Practice A submit button is defined with <button type="submit">Submit</button>, ensuring its role as a button is clear to assistive technologies.</li>
+<li>Good Practice o	A custom slider includes ARIA attributes like role="slider", aria-valuemin="0", aria-valuemax="100", and aria-valuenow="50".</li>
+<li>Bad Practice A clickable <div> with no role or label, leaving screen readers unable to convey its purpose.</li>
+<li>Bad Practice Using vague labels like "Click Here" without context.</li>
+</ul>
+</ol>
+<h2>Practical Examples of Robust in Action</h2>
+<ol>
+<li>1: Parsing and Valid Code</li>
+<img src="E-commerce Website Icon.jpg" alt="E-commerce Website"E-commerce Website" wirth="100" hight="100">
+<ul>
+<li>Scenario: E-commerce website</li>
+<li>Robust: The website uses valid HTML to display product descriptions. Code validation tools (e.g., W3C Validator) report no errors or warnings. Assistive technologies can parse the product list correctly.</li>
+<li>Not Robust: The product descriptions are nested incorrectly, causing screen readers to skip or misinterpret the information.</li>
+</ul>
+<li>Dynamic Content Updates</li>
+<img src="Current weather conditions .jpg" alt="displaying current weather conditions, temperature, and location, with live updates" wirth="100" hight="100">
+<ul>
+<li>Scenario: A weather application with live updates</li>
+<li>Robust: When the temperature updates dynamically, it triggers an ARIA live region (aria-live="polite") so screen readers notify the user without disrupting their workflow.</li>
+<li>Not Robust: The temperature updates silently, and users relying on assistive technologies are unaware of the changes.</li>
+</ul>
+<li>Names, Roles, and Values</li>
+<img src="music player with custom controls.jpg" alt="Custom music player interface with play/pause, skip, and volume controls, displaying song title" wirth="100" hight="100">
+<ul>
+<li>Scenario: A music player with custom controls</li>
+<li>Robust: Custom play and pause buttons are labeled with ARIA roles like role="button" and include descriptive labels (e.g., "Play" and "Pause").</li>
+<li>Not Robust: The buttons are implemented as <div> elements with no ARIA roles or labels, leaving screen readers unable to identify their purpose.</li>
+</ul>
+</ol>
+<h2>Techniques for Ensuring Robustness</h2>
+<ol>
+<li>Use Valid and Semantic Code</li>
+<li>Write HTML and CSS that adhere to W3C standards.</li>
+<li>Use semantic HTML elements (e.g., button, form, header) to define structure and function.</li>Validate code using tools like the W3C Validator or accessibility checkers like Axe or Wave.</li>
+</ul>
+<li>Incorporate ARIA Attributes Carefully</li>
+<ul>
+<li>Use ARIA (Accessible Rich Internet Applications) roles, states, and properties to enhance accessibility for custom widgets or interactive elements.</li>
+<li>Avoid misusing ARIA; ensure it's only used when standard HTML elements don't suffice.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>role="alert" for critical notifications.</li>
+<li>aria-expanded="true/false" for expandable menus.</li>
+</ul>
+<li>Test Across Devices and Browsers</li>
+<ul>
+<li>Verify functionality on different browsers (e.g., Chrome, Firefox, Edge) and devices (e.g., desktop, mobile, tablets).</li>
+<li>Test with assistive technologies such as screen readers (NVDA, JAWS, VoiceOver) and keyboard navigation.</li>
+</ul>
+<li>Ensure Compatibility with Future Technologies</li>
+<ul>
+<li>Use modern web standards and avoid outdated techniques (e.g., Flash).</li>
+<li>Leverage progressive enhancement to ensure content works even in older browsers or when scripts fail.</li>
+</ul>
+</ol>
+<h2>Tools for Testing Robustness</h2>
+<ol>
+<li>W3C HTML Validator: To check for valid HTML structure and syntax.</li>
+<li>Accessibility Testing Tools: Tools like Axe, Wave, or Lighthouse to identify issues related to ARIA, dynamic updates, and code structure.</li>
+<li>Assistive Technologies: Test with NVDA, JAWS, or VoiceOver to ensure compatibility and usability.</li>
+<li>Browser Developer Tools: Inspect and debug code for accessible attributes, names, and roles.</li>
+</ol>
+<h2>Why Robustness Matters</h2>
+<ol>
+<li>Assistive Technology Users: Ensures compatibility with screen readers, braille displays, and speech recognition software.</li>
+<li>Device Diversity: Allows content to function seamlessly across devices, operating systems, and browsers.</li>
+<li>Future-Proofing: Adherence to standards ensures content remains accessible as technology evolves.</li>
+<li>Error Prevention: Valid, semantic code reduces the likelihood of unexpected behavior or accessibility failures.</li>
+</ol>
+<h2>Benefits of Robust Content</h2>
+<ul>
+<li>Improved Accessibility: Enables more users, including those relying on assistive technologies, to interact with content effectively.</li>
+<li>Enhanced Usability: Robust designs are often more user-friendly and reliable for everyone.</li>
+<li>Compliance: Meets WCAG standards, ensuring legal and ethical responsibilities are fulfilled.</li>
+</ul>
+<p>By focusing on Robustness, developers create digital content that is accessible, adaptable, and prepared for future technological advancements.</p>
+<a href="conclusion.html" target="-blank"> Next page Conclusion</a>
+<a href="Principle of Understandable.html" target="-blank"> Previous  page principle of Understandable</a>
+</div>
+<div role="contentinfo">
+<a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe"> Whatsap</a>
+<a href=""> Facebook </a>
+<a href=""> linkdin </a>
+<a href="https://youtu.be/WJgc-goUhS0?si=tAwl7lukyYVR6UdE"> You tube </a>
+</div>
+</body>
+</html>

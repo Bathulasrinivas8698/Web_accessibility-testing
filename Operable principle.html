@@ -1,0 +1,183 @@
+<doctype html>
+<html lang="en">
+<head>
+<title>principle of Operable</title>
+</head>
+<body>
+<head>
+<div id="skipnav"><a href="#Maincontent">Skip to main content</a></div>
+<div role="navigation">
+<ul>
+<li><a href="index.html" target="-blank"> Home</a></li> 
+<li><a href="About us.html" target="-blank"> About us</a></li> 
+<li><a href="Contact us.html" target="-blank"> Contact us</a></li> 
+<li> <a href="Types of screen readers.html" target="-blank"> Screen reader types</a> </li>
+<li><a href="principles of accessibility.html" target="-blank"> accessibility principles</a></li>
+<li><a href="Principle Of Perceivable.html" target="-blank"> Principle Of Perceivable</a></li>
+<li><a href="Operable principle.html" target="-blank"> Operable Principle</a></li>
+<li><a href="Principle of Understandable.html" target="-blank"> Principle of Understandable</a></li>
+<li><a href="Principle of Robust.html" target="-blank"> Principle of Robust</a></li>
+<li><a href="conclusion.html" target="-blank"> Conclusion page</a></li>
+</ul>
+</div>
+<div role="banner">
+<img src="Operable Logo.jpg" alt="Operable Logo" wirth="100" hight="100">
+</div>
+<div>
+<form>
+<label for="Search"> Search </label>
+<input type="text" id "Search" aria-label="What do you want to search hear">
+<input type="submit" value="search">
+</form>
+</div>
+<div role="main" id="mainContent" tab index="-1">
+<h1>Operable Principle</h1>
+<p>The Operable principle in the Web Content Accessibility Guidelines (WCAG) ensures that users can interact with, navigate, and operate websites or applications without barriers. This is particularly important for individuals with motor, visual, or cognitive disabilities who might rely on assistive technologies or alternate input methods.</p>
+<h2>Keyboard Accessibility (Guideline 2.1)</h2>
+<img src="Keyboard Accessibility Icon.jpg" alt="keyboard with a pointer on the 'Enter' key, highlighting the ability to navigate and interact with digital content" wirth="100" hight="100">
+<p>All functionalities of a website must be accessible using a keyboard. This is crucial for users who cannot use a mouse due to physical or visual impairments.</p>
+<h3>Key Points</h3>
+<ul>
+<li>Ensure navigation and actions can be performed with the Tab, Enter, Space, or Arrow keys.</li>
+<li>Avoid "keyboard traps" where a user gets stuck in a component and cannot navigate out.</li>
+</ul>
+<h3>Examples of Keyboard Accessibility</h3>
+<ul>
+<li>Good Practice: Using standard HTML buttons (<button>) that can be activated with the Enter key.</li>
+<li>Bad Practice: Custom controls (e.g., a clickable <div>) that only respond to mouse clicks without keyboard support.</li>
+</ul>
+<h2>Provide Enough Time (Guideline 2.2)</h2>
+<img src="Provide Enough Time Icon.jpg" alt="symbolizing the provision of sufficient time for users to read, interact, and complete tasks without feeling rushed" wirth="100" hight="100">
+<p>Users should have sufficient time to read, understand, and interact with the content. If there are time limits, users must be able to adjust or disable them.</p>
+<h3>Key Points</h3>
+<ul>
+<li>Include options to pause, stop, or extend time-based content like quizzes or forms.</li>
+<li>Avoid auto-logout sessions without warnings.</li>
+</ul>
+<h3>Examples of Provide Enough Time</h3>
+<ul>
+<li>Good Practice: A bank login form that displays a "Your session is about to expire" warning with an option to extend the time.</li>
+<li>Bad Practice: Automatically logging users out without notifying them or saving their work.</li>
+</ul>
+<h2>Avoid Content That Causes Seizures (Guideline 2.3)</h2>
+<img src="Seizure-Proof Icon.jpg" alt="indicating the avoidance of content that may cause seizures or photosensitive epilepsy" wirth="100" hight="100">
+<p>Content must not include flashing or strobing elements that could trigger seizures. Specifically, content should not flash more than three times per second.</p>
+<h3>Key Points</h3>
+<ul>
+<li>Limit rapid animations or blinking effects.</li>
+<li>Use tools to test content for seizure risks.</li>
+</ul>
+<h3>Examples of Avoid Content That Causes Seizures</h3>
+<ul>
+<li>Good Practice: Animating a loading spinner smoothly without rapid flashing.</li>
+<li>Bad Practice: Including a banner ad with rapid, bright strobe effects.</li>
+</ul>
+<h2>Navigable (Guideline 2.4)</h2>
+<img src="Navigable Icon.jpg" alt="An icon featuring a simple website layout with clear headings, links, and navigation" wirth="100" hight="100">
+<p>Users must be able to navigate and locate content effectively. Clear navigation paths, headings, and focus indicators help users interact with the content.</p>
+<h3>Key Points</h3>
+<ul>
+<li>Use descriptive page titles and structured headings (e.g., heading level 1 to heading level 6).</li>
+<li>Include landmarks like navigation menus and skip-to-content links.</li>
+<li>Maintain a visible keyboard focus indicator for interactive elements.</li>
+</ul>
+<h3>Examples of Navigable</h3>
+<ul>
+<li>Good Practice: A "Skip to main content" link at the top of a webpage.</li>
+<li>Bad Practice: Failing to provide keyboard shortcuts for repetitive tasks, forcing users to tab through multiple elements.</li>
+</ul>
+<h2>Input Modalities (Guideline 2.5)</h2>
+<img src="Input Modalities Icon.jpg" alt="combination of input methods, including a keyboard, mouse, touchscreen, and voice command microphone" wirth="100" hight="100">
+<p>Ensure alternative input methods (e.g., voice, touch, or pointer) are supported, especially on mobile devices.</p>
+<h3>Key Points</h3>
+<ul>
+<li>Design touch targets to be large enough and spaced apart to prevent accidental activation.</li>
+<li>Support gestures and input variations for interactive components.</li>
+</ul>
+<h3>Examples of Input Modalities</h3>
+<ul>
+<li>Good Practice: A mobile site with large, easy-to-tap buttons (e.g., 48px by 48px) for navigation.</li>
+<li>Bad Practice: Small, densely packed touch targets that make navigation difficult for users with mobility impairments.</li>
+</ul>
+<h2>Practical Examples of Operable in Action</h2>
+<ol>
+<li>Keyboard Accessibility</li>
+<img src="E-commerce Website Icon.jpg" alt="E-commerce Website" wirth="100" hight="100">
+<ul>
+<li>Scenario: A shopping website.</li>
+<li>Operable: The user can navigate product categories using the Tab key and add items to the cart by pressing Enter.</li>
+<li>Not Operable: The "Add to Cart" button requires a mouse click and does not respond to keyboard input.</li>
+</ul>
+<li>2. Providing Enough Time</li>
+<img src="Timed Online Quiz Icon.jpg" alt="Timed Online Quiz Icon" wirth="100" hight="100">
+<ul>
+<li>Scenario: A timed online quiz.</li>
+<li>Operable: The quiz includes a timer with an option to pause or request more time.</li>
+<li>Not Operable: The quiz automatically submits answers after a strict time limit with no warnings.</li>
+</ul>
+<li>Avoiding Seizures</li>
+<img src="Gaming Website Icon.jpg" alt="Gaming Website" wirth="100" hight="100">
+<ul>
+<li>Scenario: A gaming website with promotional content.</li>
+<li>Operable: Animations transition smoothly without abrupt or rapid flashes.</li>
+<li>Not Operable: The site uses flashing neon lights to attract attention, risking seizures.</li>
+</ul>
+<li>Navigation Features</li>
+<img src="Education Portal Icon.jpg" alt="Education Portal" wirth="100" hight="100">
+<ul>
+<li>Scenario: An educational portal.</li>
+<li>Operable: The site has a table of contents with clickable headings, and users can jump to specific sections using screen reader commands or a "Skip to section" feature.</li>
+<li>Not Operable: Users must scroll through long pages without shortcuts, making navigation cumbersome.</li>
+</ul>
+<li>Supporting Touch and Pointer Input</li>
+<img src="Mobile Banking App Icon.jpg" alt="Mobile Banking App" wirth="100" hight="100">
+<ul>
+<li>Scenario: A mobile banking app.</li>
+<li>Operable: Buttons are large enough to tap easily, and form fields are spaced adequately.</li>
+<li>Not Operable: Small buttons and closely packed fields cause users to misclick frequently.</li>
+</ul>
+</ol>
+<h2>Tools and Techniques to Ensure Operability</h2>
+<ol>
+<li>Testing for Keyboard Accessibility</li>
+<ul>
+<li>Use the Tab key to navigate your site and confirm all interactive elements are reachable and operable.</li>
+<li>Ensure the focus order is logical and matches the visual layout.</li>
+</ul>
+<li>Time Limit Adjustments</li>
+<ul>
+<li>Provide user settings to extend or remove time constraints.</li>
+<li>Test for scenarios where users may need additional time, like filling forms.</li>
+</ul>
+<li>Seizure Risk Testing</li>
+<ul>
+<li>Use tools like the Trace Center's Photosensitive Epilepsy Analysis Tool (PEAT) to check for flashing content.</li>
+</ul>
+<li>Screen Reader Navigation</li>
+<ul>
+<li>Test your site with popular screen readers (NVDA, JAWS, VoiceOver) to ensure it is navigable with assistive technology.</li>
+</ul>
+<li>Mobile Responsiveness</li>
+<ul>
+<li>Check touch targets and input interactions on various devices and screen sizes.</li>
+</ul>
+</ol>
+<h2>Why Operability Matters</h2>
+<ul>
+<li>Inclusive Design: Operable interfaces ensure accessibility for users with diverse physical and cognitive abilities.</li>
+<li>Improved Usability: Better operability benefits all users, including those in challenging environments (e.g., noisy places or poor lighting conditions).</li>
+<li>Compliance and Avoiding Legal Risks: Following WCAG’s Operable guidelines aligns with accessibility laws like ADA and Section 508.</li>
+</ul>
+<p>By focusing on Operable, developers and designers can ensure their websites and applications are functional, usable, and inclusive for all users.</p>
+<p>The principle of understandable content begins on the next page. Click the link below to continue reading.</p>
+<a href="Principle of Understandable.html" target="-blank"> Next page principle of Understandable</a>
+<a href="Principle Of Perceivable.html" target="-blank"> Previous page principle of Perceivable</a>
+</div>
+<div role="contentinfo">
+<a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe"> Whatsap</a>
+<a href=""> Facebook </a>
+<a href=""> linkdin </a>
+<a href="https://youtu.be/WJgc-goUhS0?si=tAwl7lukyYVR6UdE"> You tube </a>
+</div>
+</body>
+</html>
