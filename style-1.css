@@ -1,0 +1,99 @@
+/* Style for skip navigation link */
+#skipnav a {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 10000;
+}
+
+#skipnav a:focus {
+  top: 0;
+  left: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* Banner styles */
+.banner img {
+  width: 100px;
+  height: 100px;
+}
+
+.banner p {
+  font-size: 14px;
+}
+
+/* Form styles */
+form {
+  margin: 20px 0;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+form input[type="submit"] {
+  padding: 10px;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+main h1, main h2, main h3 {
+  color: #333;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
