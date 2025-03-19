@@ -1,0 +1,103 @@
+<doctype html>
+<html lang="en">
+<head>
+<title>Guidelines and Success Criterias</title>
+<link rel="stylesheet" href="style-1.css">
+</head>
+<body>
+<head>
+<div id="skipnav"> <a href="#mainContent"> Skip to main content</a></div>
+<div role="navigation">
+<ul>
+<a href="index.html" target="-blank"> Home</a>
+<a href="About us.html" target="-blank"> About us</a>
+<a href="Contact us.html" target="-blank"> Contact us</a>
+<a href="Types of screen readers.html" target="-blank"> Screen reader types</a>
+<a href="principles of accessibility.html" target="-blank"> accessibility principles</a>
+<a href="Principle Of Perceivable.html" target="-blank"> Principle Of Perceivable</a>
+<a href="Operable principle.html" target="-blank"> Operable Principle</a>
+<a href="Principle of Understandable.html" target="-blank"> Principle of Understandable</a>
+<a href="Principle of Robust.html" target="-blank"> Principle of Robust</a>
+<a href="Guidelines  and Success Criteria's.html" target="-blank"> Guidelines  and Success Criteria's</a>
+<a href="Guidelines of Perceivable.html" target="-blank"> Guidelines of Perceivable</a>
+<a href="Guidelines of Operable.html" target="-blank"> Guidelines of Operable</a>
+<a href="Guidelines of Understandable.html" target="-blank"> Guidelines of Understandable</a>
+<a href="Guidelines of Robust.html" target="-blank"> Guidelines of Robust</a>
+<a href="conclusion.html" target="-blank"> Conclusion page</a>
+</ul>
+</div>
+<div role="banner">
+<img src="Web Content Accessibility Guidelines.jpg" alt="Web Content Accessibility Guidelines logo" wirth="100" hight="100">
+</div>
+<div>
+<form>
+<label for="Search"> Search </label>
+<input type="text" id "Search" aria-label="What do you want to search hear">
+<input type="submit" value="search">
+</form>
+</div>
+<div role="main" id="mainContent" tab index="-1">
+<h1>Guidelines  and Success Criteria's</h1>
+<p>Guidelines refer to the Web Content Accessibility Guidelines (WCAG), which provide recommendations to make digital content more accessible to people with disabilities. POUR principles form the foundation of these guidelines.</p>
+<p>Success Criteria's are specific testable statements under each guideline that define whether a web element meets accessibility standards. Success criteria are categorized by three levels: A, AA, and AAA, with AAA being the most accessible.</p>
+<h2>how success criteria apply to each POUR principle</h2>
+<p>Here’s how Success Criteria apply to each POUR accessibility principle with examples</p>
+<ol>
+<li>Perceivable</li>
+<p>Content must be presentable to all users in ways they can perceive. Example Success Criterion: 1.1.1 Non-text Content (Level A).<p>
+<ul>
+<li>All non-text content (images, charts, icons) must have alternative text (alt text) to convey meaning to users who rely on screen readers.</li>
+<li>Example: A product image on an e-commerce site has an alt text: "Red cotton T-shirt with round neck."</li>
+</ul>
+<li>Operable</li>
+<p>Users must be able to interact with the interface easily. Example Success Criterion: 2.1.1 Keyboard (Level A)</p>
+<ul>
+<li>All functionality must be operable using a keyboard without requiring a mouse.</li>
+<li>Example: A website allows users to navigate menus and submit forms using the Tab and Enter keys.</li>
+</ul>
+<li>Understandable</li>
+<p>Information and operation must be clear and predictable. Example Success Criterion: 3.3.1 Error Identification (Level A)</p>
+<ul>
+<li>If a user makes an error (e.g., missing a required field in a form), the system must identify and describe the error clearly.</li>
+<li>Example: A login form highlights a missing password field and displays a message: "Password is required."</li>
+</ul>
+<li>Robust</li>
+<p>Content must be compatible with assistive technologies and different devices. Example Success Criterion: 4.1.2 Name, Role, Value (Level A)</p>
+<ul>
+<li>Web elements (like buttons, form inputs) must have correct labels and roles so that screen readers can interpret them properly.</li>
+<li>Example: A "Submit" button is coded with <button aria-label="Submit form">Submit</button> to ensure screen readers announce it correctly.</li>
+</ul>
+</ol>
+<h2>When was it built?</h2>
+<p>The Web Content Accessibility Guidelines (WCAG) were first published by the World Wide Web Consortium (W3C) in 1999, with multiple versions released over time, including WCAG 1.0 (1999) as the initial version, WCAG 2.0 (2008) introducing the POUR (Perceivable, Operable, Understandable, Robust) principles, WCAG 2.1 (2018) adding criteria for mobile accessibility, low vision users, and cognitive disabilities, WCAG 2.2 (expected in 2023) refining accessibility further, and WCAG 3.0 (under development) aiming to be more flexible and user-friendly.</p>
+<h2>What is the purpose of Guidelines and Success Criteria?</h2>
+<p>Guidelines provide general principles to make web content accessible, while Success Criteria are specific, testable rules under each guideline to measure accessibility. The primary goal is to ensure equal access for people with disabilities, including those who rely on screen readers for visual impairments, keyboard navigation for mobility limitations, voice commands for restricted hand movement, and alternative input methods such as switch devices and eye tracking.
+<h2>In which situations is it useful?</h2>
+<p>Guidelines and Success Criteria are useful in various situations, including building websites that are accessible to all users, developing mobile apps that support voice navigation, creating digital documents such as PDFs, forms, and reports that are screen-reader-friendly, and ensuring compliance with accessibility laws such as the Americans with Disabilities Act (ADA) in the USA, Section 508 for US government websites, and EN 301 549 in Europe.</p>
+<h2>4. Who is impacted by these Guidelines and Success Criteria?</h2>
+<p>These guidelines positively impact many groups, including people with disabilities, such as those with visual, hearing, mobility, or cognitive impairments, elderly users who may struggle with reading small text or using a mouse, mobile users who rely on voice commands, screen readers, or zoom features, and businesses and developers by ensuring their websites are legally compliant and user-friendly.</p>
+<h2>Who are the real users</h2>
+<p>Different users interact with web content in various ways based on their accessibility needs. Below is a detailed explanation of how each group uses and benefits from accessible design</p>
+<ol>
+<li>👩‍🦯 Screen Reader Users</li>
+<p>These users rely on screen reading software like NVDA, JAWS, or VoiceOver to interpret and read aloud webpage content. They navigate using keyboard shortcuts instead of a mouse, such as Tab to move between links and form fields, Arrow keys to read through text content, and Enter or Spacebar to activate buttons or links. Proper use of alt text for images, ARIA landmarks, semantic HTML, and clear heading structures makes content more accessible for them.</p>
+<li>⌨️ Keyboard-Only Users</li>
+<p>These users cannot use a mouse due to mobility impairments or preference and instead rely on keyboard navigation using the Tab key to move between interactive elements like links, buttons, and forms, Shift + Tab to move backward through elements, Enter or Spacebar to select or activate elements, and Arrow keys for navigating within dropdowns, menus, or reading content. Websites must ensure focus indicators (visible highlights on selected elements) and a logical tab order for seamless navigation.</p>
+<li>🧠 Users with Cognitive Disabilities</li>
+<p>Users with conditions like dyslexia, ADHD, autism, or memory impairments require content that is clear and concise, avoiding complex jargon or long sentences, well-structured with headings, bullet points, and whitespace, and predictable in navigation, avoiding unexpected pop-ups or confusing layouts. They benefit from visual cues, such as icons alongside text for better comprehension, while features like read-aloud tools, adjustable font sizes, and easy-to-follow instructions further improve accessibility.</p>
+<li>🎨 Color-Blind Users</li>
+<p>Users with color blindness may struggle to distinguish between certain colors, such as red and green or blue and yellow, and rely on high-contrast designs to differentiate elements easily, text labels instead of color indicators (e.g., displaying "Error: Enter a valid email" instead of just a red highlight), and patterns and shapes in graphs and charts for better readability instead of using color alone. Web designers should test contrast ratios using tools like the WebAIM Contrast Checker to ensure compliance with WCAG standards.</p>
+</ol>
+<p>By understanding the needs of different users, developers can create more inclusive, user-friendly websites that provide equal access to information and services.</p>
+<p>The guidelines for perceivable content begin on the next page. Click the link below to continue reading.</p>
+<a href="Guidelines of Perceivable.html" target="-blank"> Next page Guidelines of Perceivable</a>
+<a href="Principle of Robust.html" target="-blank"> Previous page Principle of Robust</a>
+</div>
+<div role="contentinfo">
+<a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe"> Whatsap</a>
+<a href=""> Facebook </a>
+<a href=""> linkdin </a>
+<a href="https://youtu.be/WJgc-goUhS0?si=tAwl7lukyYVR6UdE"> You tube </a>
+</div>
+</body>
+</html>
