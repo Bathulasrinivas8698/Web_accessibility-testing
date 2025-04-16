@@ -1,0 +1,207 @@
+<doctype html>
+<html lang="en">
+<head>
+<title>Guidelines of Understandable</title>
+<link rel="stylesheet" href="style-1.css">
+</head>
+<body>
+<head>
+<div id="skipnav"> <a href="#mainContent"> Skip to main content</a></div>
+<div role="navigation">
+<ul>
+<a href="index.html" target="-blank"> Home</a>
+<a href="About us.html" target="-blank"> About us</a>
+<a href="Contact us.html" target="-blank"> Contact us</a>
+<a href="Types of screen readers.html" target="-blank"> Screen reader types</a>
+<a href="principles of accessibility.html" target="-blank"> accessibility principles</a>
+<a href="Principle Of Perceivable.html" target="-blank"> Principle Of Perceivable</a>
+<a href="Operable principle.html" target="-blank"> Operable Principle</a>
+<a href="Principle of Understandable.html" target="-blank"> Principle of Understandable</a>
+<a href="Principle of Robust.html" target="-blank"> Principle of Robust</a>
+<a href="Guidelines  and Success Criteria's.html" target="-blank"> Guidelines  and Success Criteria's</a>
+<a href="Guidelines of Perceivable.html" target="-blank"> Guidelines of Perceivable</a>
+<a href="Guidelines of Operable.html" target="-blank"> Guidelines of Operable</a>
+<a href="Guidelines of Understandable.html" target="-blank"> Guidelines of Understandable</a>
+<a href="Guidelines of Robust.html" target="-blank"> Guidelines of Robust</a>
+<a href="conclusion.html" target="-blank"> Conclusion page</a>
+</ul>
+</div>
+<div role="banner">
+<img src="Principle of Understandable Logo.jpg" alt="Understandable logo" wirth="100" hight="100">
+</div>
+<div>
+<form>
+<label for="Search"> Search </label>
+<input type="text" id "Search" aria-label="What do you want to search hear">
+<input type="submit" value="search">
+</form>
+</div>
+<div role="main" id="mainContent" tab index="-1">
+<h1>Understandable principle</h1>
+<p>The principle of Understandable is the third guideline of the Web Content Accessibility Guidelines (WCAG) and ensures that both the information and the operation of the user interface are easy to understand. This principle focuses on making digital content and interfaces predictable, readable, and user-friendly, especially for people with cognitive, learning, or language-related disabilities.</p>
+<p>Under the Understandable principle, there are three guidelines that help ensure websites and applications are easy to comprehend and use. These guidelines focus on consistent behavior, readable content, and error handling.</p>
+<ol>
+<li>Readable - Make text content readable and understandable. This includes using clear language, defining unusual words or abbreviations, and providing the ability to identify the language of the content so that assistive technologies can interpret it correctly.</li>
+<li>Predictable - Make web pages appear and operate in predictable ways. Users should be able to anticipate how things will behave. This includes consistent navigation, avoiding unexpected changes when elements receive focus, and ensuring that user-initiated actions don’t cause sudden context changes.</li>
+<li>Input Assistance - Help users avoid and correct mistakes. This includes clearly identifying input errors, offering suggestions for correction, and allowing users to review and confirm information before final submission, which is especially important for forms.</li>
+</ol>
+<p>Each of these guidelines contains Success Criteria that define measurable requirements at various WCAG levels (A, AA, AAA). These criteria help developers ensure that all users, including those with cognitive or intellectual challenges, can easily understand and interact with digital content.</p>
+<h2>Guidelines of Success Criteria</h2>
+<p>There are a total of 17 Success Criteria (SC) in the Principle of Understandable.</p>
+<ol>
+<li>Guideline 3.1: Readable</li>
+<ul>
+<li>3.1.1 Language of Page (A)</li>
+<li>3.1.2 Language of Parts (AA)</li>
+<li>3.1.3 Unusual Words (AAA)</li>
+<li>3.1.4 Abbreviations (AAA)</li>
+<li>3.1.5 Reading Level (AAA)</li>
+<li>3.1.6 Pronunciation (AAA)</li>
+</ul>
+<li>Guideline 3.2: Predictable</li>
+<ul>
+<li>3.2.1 On Focus (A)</li>
+<li>3.2.2 On Input (A)</li>
+<li>3.2.3 Consistent Navigation (AA)</li>
+<li>3.2.4 Consistent Identification (AA)</li>
+<li>3.2.5 Change on Request (AAA)</li>
+</ul>
+<li>Guideline 3.3: Input Assistance</li>
+<ul>
+<li>3.3.1 Error Identification (A)</li>
+<li>3.3.2 Labels or Instructions (A)</li>
+<li>3.3.3 Error Suggestion (AA)</li>
+<li>3.3.4 Error Prevention (Legal, Financial, Data) (AA)</li>
+<li>3.3.5 Help (AAA)</li>
+<li>3.3.6 Error Prevention (All) (AAA)</li>
+</ul>
+</ol>
+<h2> Examples of Guideline 3.1: Readable</h2>
+<p>Guideline 3.1 of the Web Content Accessibility Guidelines (WCAG) ensures that the text content on a website is easy to read and understandable for as many users as possible. This includes specifying the language of the content and providing support for users who may struggle with reading or comprehension.</p>
+<p>Here are examples of how to meet Guideline 3.1:</p>
+<ol>
+<li>3.1.1 Language of Page (A)</li>
+<p>The default human language of each web page must be programmatically identified. Example: An English website uses the language tag lang="en" to identify the language of the page.</p>
+<ul>
+<li>Good Example: The HTML element includes lang="en" to clearly indicate the content is in English.</li>
+<li>Bad Example: No language attribute is defined, so screen readers may mispronounce the text.</li>
+</ul>
+<li>3.1.2 Language of Parts (AA)</li>
+<p>When a passage or phrase of text is in a different language than the main page, it must be marked with the correct language attribute. Example: A blog post in English includes a French quote marked with lang="fr".</p>
+<ul>
+<li>Good Example: The quote “C’est la vie” is wrapped with <span lang="fr"> so screen readers switch pronunciation correctly.</li>
+<li>Bad Example: The French phrase is not marked, so it is read incorrectly by assistive technologies.</li>
+</ul>
+<li>3.1.3 Unusual Words (AAA)</li>
+<p>A mechanism is provided for understanding unusual or complex words, including jargon, idioms, and abbreviations. Example: An academic site provides definitions or glossaries for technical terms like “photosynthesis” or “mitochondria.”</p>
+<ul>
+<li>Good Example: Offers tooltips or linked glossary definitions for technical terms.</li>
+<li>Bad Example: Uses technical vocabulary without explanation, which may confuse non-experts.</li>
+</ul>
+<li>3.1.4 Abbreviations (AAA)</li>
+<p>A method must be available to identify the meaning of abbreviations. Example: The abbreviation “WCAG” is accompanied by a definition or expansion on first use: “Web Content Accessibility Guidelines (WCAG).”</p>
+<ul>
+<li>Good Example: The full term is given on first mention, with a tooltip or parenthetical explanation.</li>
+<li>Bad Example: The site uses “HTML,” “URL,” and “API” without explaining what they stand for.</li>
+</ul>
+<li>3.1.5 Reading Level (AAA)</li>
+<p>If text requires reading skills more advanced than lower secondary education, a simpler version or supplemental content must be provided. Example: A government website uses plain language and offers a simplified summary for legal texts.</p>
+<ul>
+<li>Good Example: Provides a “Summary in Plain Language” section for each dense document.</li>
+<li>Bad Example: Uses complex legal or academic language without explanation.</li>
+</ul>
+<li>3.1.6 Pronunciation (AAA)</li>
+<p>When the pronunciation of a word is necessary to understand the content, a way to access it must be available. Example: An online dictionary includes an audio button next to each word for pronunciation.</p>
+<ul>
+<li>Good Example: Words like “colonel” include phonetic spelling or a “play pronunciation” button.</li>
+<li>Bad Example: Words with unusual pronunciation are shown with no way to hear or understand them.</li>
+</ul>
+</ol>
+<h2>Guideline 3.2: Predictable</h2>
+<p>Guideline 3.2 of the Web Content Accessibility Guidelines (WCAG) ensures that websites behave in consistent and expected ways. When content or interface elements behave unexpectedly, it can confuse users — especially those using assistive technologies or those with cognitive disabilities. This guideline aims to reduce surprises by promoting consistent navigation and interactions. </p>
+<p>Here are examples of how to meet Guideline 3.2:</p>
+<ol>
+<li>3.2.1 On Focus (A)</li>
+<p>When an element receives focus (e.g., by keyboard navigation), it must not initiate a significant change like submitting a form or opening a new window. Example: When a user tabs to a form field, it doesn’t automatically move to another page or change content.</p>
+<ul>
+<li>Good Example: Tabbing into the field only highlights it; no other changes occur.</li>
+<li>Bad Example: Tabbing into a dropdown menu causes the page to reload with different content.</li>
+</ul>
+<li>3.2.2 On Input (A)</li>
+<p>Changing a form control’s value (like selecting an option) must not automatically trigger a major action unless the user is informed beforehand. Example: A dropdown selection changes a page section, but only after the user clicks a submit button.</p>
+<ul>
+<li>Good Example: The user selects an item and then clicks “Go” to confirm the change.</li>
+<li>Bad Example: Selecting an item in a dropdown instantly redirects the user.</li>
+</ul>
+<li>3.2.3 Consistent Navigation (AA)</li>
+<p>Navigation links and menus that appear on multiple pages must be presented in the same order each time. Example: A website's top menu includes “Home, About, Services, Contact” in that order on every page.</p>
+<ul>
+<li>Good Example: The layout and order of navigation elements remain consistent site-wide.</li>
+<li>Bad Example: Navigation order changes randomly on different pages.</li>
+</ul>
+<li>3.2.4 Consistent Identification (AA)</li>
+<p>Elements with the same function must be identified consistently across the site. Example: A “search” feature always uses the same magnifying glass icon and label, regardless of the page.</p>
+<ul>
+<li>Good Example: All search fields are labeled as “Search” and use the same icon and placement.</li>
+<li>Bad Example: A search bar is labeled “Find” on one page and “Quick Lookup” on another.</li>
+</ul>
+<li>3.2.5 Change on Request (AAA)</li>
+<p>Changes of context (like loading new content or moving to another page) should only occur at the user's request. Example: A multi-step form doesn’t proceed to the next step until the user clicks “Next.”</p>
+<ul>
+<li>Good Example: The user must click a clearly labeled button to proceed.</li>
+<li>Bad Example: The page jumps to the next step automatically when the user finishes typing.</li>
+</ul>
+</ol>
+<h2>Examples of Guideline 3.3: Input Assistance</h2>
+<p>Guideline 3.3 of the Web Content Accessibility Guidelines (WCAG) focuses on helping users avoid and correct mistakes when interacting with web forms or other input mechanisms. It is especially helpful for people with cognitive, language, and motor disabilities.</p>
+<p>Here are examples of how to meet Guideline 3.3:</p>
+<ol>
+<li>3.3.1 Error Identification (A)</li>
+<p>If an input error is detected, it must be identified and described to the user in text. Example: A form shows an error message saying, “Email address is required” when the field is left empty.</p>
+<ul>
+<li>Good Example: The error message is clearly stated in text: “Please enter a valid email address.”</li>
+<li>Bad Example: The field just turns red without explaining the issue.</li>
+</ul>
+<li>3.3.2 Labels or Instructions (A)</li>
+<p>Labels or instructions must be provided when user input is required. Example: A password field includes a label and a note: “Password (8+ characters, at least one number).”</p>
+<ul>
+<li>Good Example: Each field is clearly labeled and includes helpful guidance.</li>
+<li>Bad Example: Fields are shown without labels or hints, causing confusion.</li>
+</ul>
+<li>3.3.3 Error Suggestion (AA)</li>
+<p>When an error is detected and suggestions for correction are known, they should be provided. Example: An error message for a form states: “Username already exists. Try adding numbers or choosing a different name.”</p>
+<ul>
+<li>Good Example: It offers a suggestion: “The name 'john123' is taken. Try ‘john456’ instead.”</li>
+<li>Bad Example: It just says, “Error.”</li>
+</ul>
+<li>3.3.4 Error Prevention (Legal, Financial, Data) (AA)</li>
+<p>For web pages that involve legal or financial transactions, users must be able to review and correct their input before final submission. Example: An e-commerce checkout process includes a confirmation screen showing billing and shipping details before purchase.</p>
+<ul>
+<li>Good Example: The user is shown a summary and must click “Confirm Order” after review.</li>
+<li>Bad Example: Clicking “Submit” instantly places the order without review.</li>
+</ul>
+<li>3.3.5 Help (AAA)</li>
+<p>Context-sensitive help is available for more complex input tasks. Example: A job application form includes a “Help” icon next to fields with additional instructions when needed.</p>
+<ul>
+<li>Good Example: Each tricky section includes a help icon or tooltip explaining what’s expected.</li>
+<li>Bad Example: The form has no guidance or help, leading to mistakes.</li>
+</ul>
+<li>3.3.6 Error Prevention (All) (AAA)</li>
+<p>All user input is either reversible, checked for errors, or confirmed by the user before final submission. Example: A web app saving sensitive data displays a summary and asks for confirmation before saving.</p>
+<ul>
+<li>Good Example: A confirmation dialog appears before finalizing the action, and there’s an “Undo” option.</li>
+<li>Bad Example: Submitting a form immediately deletes data with no confirmation or undo option.</li>
+</ul>
+</ol>
+<p>You have now seen various examples of understandable elements. Each example will indicate which type is most effective and which may face challenges. The next topic continues on the next page—click the link below to keep reading.</p>
+<a href="Guidelines of Robust.html" target="-blank"> Next page Guidelines of Robust</a>
+<a href="Guidelines of Operable.html" target=""> Previous page Guidelines of Operable</a>
+</div>
+<div role="contentinfo">
+<a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe"> Whatsap</a>
+<a href=""> Facebook </a>
+<a href=""> linkdin </a>
+<a href="https://youtu.be/WJgc-goUhS0?si=tAwl7lukyYVR6UdE"> You tube </a>
+</div>
+</body>
+</html>
