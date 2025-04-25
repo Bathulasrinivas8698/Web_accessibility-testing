@@ -1,0 +1,14 @@
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+.border-image {
+    border: 3px solid #004080;
+    padding: 5px;
+    border-radius: 10px;
+}

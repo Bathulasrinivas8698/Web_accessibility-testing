@@ -1,0 +1,47 @@
+/* Heading Styles */
+h1 {
+    color: #004080;
+    background-color: #e6f0ff;
+    padding: 10px 15px;
+    border: 2px solid #004080;
+    border-radius: 6px;
+    margin: 20px 0 10px;
+}
+
+h2 {
+    color: #0055aa;
+    background-color: #e0f2ff;
+    padding: 8px 14px;
+    border: 2px solid #0055aa;
+    border-radius: 6px;
+    margin: 18px 0 10px;
+}
+
+h3 {
+    color: #007acc;
+    background-color: #e5f7ff;
+    padding: 6px 12px;
+    border: 2px solid #007acc;
+    border-radius: 6px;
+    margin: 16px 0 8px;
+}
+
+h4 {
+    color: #0099cc;
+    background-color: #e0fbff;
+    padding: 5px 10px;
+    border: 2px solid #0099cc;
+    border-radius: 6px;
+    margin: 14px 0 8px;
+}
+
+/* Paragraph Styles */
+p {
+    color: #222222;               /* Dark gray for readability */
+    background-color: #f9f9f9;    /* Light background */
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin: 12px 0;
+    line-height: 1.6;
+}

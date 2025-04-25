@@ -1,0 +1,8 @@
+/* List Styles */
+ul, ol {
+    margin: 10px 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}

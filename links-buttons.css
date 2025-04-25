@@ -1,0 +1,73 @@
+/* Link Styles */
+a:link {
+    color: #0055aa;                  /* Unvisited links: Blue */
+    background-color: #e6f0ff;
+    padding: 6px 12px;
+    border: 2px solid #0055aa;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+a:visited {
+    color: #008000;                  /* Visited links: Green */
+    background-color: #eaffea;
+    border: 2px solid #008000;
+}
+
+a:hover,
+a:focus {
+    color: #003366;
+    background-color: #dcecff;
+    border-color: #003366;
+    text-decoration: underline;
+    outline: none;
+}
+
+a:active {
+    color: #001a33;
+    background-color: #ccdff5;
+    border-color: #001a33;
+}
+
+/* Button Styles */
+button {
+    background-color: #ffcc00;       /* Unvisited buttons: Solid Yellow */
+    color: #000;
+    border: 2px solid #ffaa00;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Visited buttons (simulated with a custom class) */
+button.visited {
+    background-color: #333333;       /* Dark Gray for visited buttons */
+    color: white;
+    border: 2px solid #1a1a1a;
+}
+
+/* Hover and focus for all buttons */
+button:hover,
+button:focus {
+    background-color: #ffd633;
+    border-color: #ffaa00;
+    outline: none;
+}
+
+/* Active button state */
+button:active {
+    background-color: #ffb700;
+    border-color: #ff9900;
+}
+
+/* Disabled button */
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    border-color: #cccccc;
+    cursor: not-allowed;
+}
