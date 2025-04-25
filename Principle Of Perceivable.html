@@ -1,128 +1,155 @@
-<doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Principle Of Perceivable</title>
-  <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <title>Principle Of Perceivable</title>
+    <link rel="stylesheet" href="landmarks.css">
+    <link rel="stylesheet" href="headings.css">
+    <link rel="stylesheet" href="images.css">
+    <link rel="stylesheet" href="links-buttons.css">
+    <script src="menu.js"></script>
 </head>
 <body>
-<head>
+
 <div id="skipnav"><a href="#mainContent">Skip to main content</a></div>
-<div role="navigation">
-<ul>
-<a href="index.html" target="-blank"> Home</a>
-<a href="About us.html" target="-blank"> About us</a>
-<a href="Contact us.html" target="-blank"> Contact us</a>
-<a href="Types of screen readers.html" target="-blank"> Screen reader types</a>
-<a href="principles of accessibility.html" target="-blank"> accessibility principles</a>
-<a href="Principle Of Perceivable.html" target="-blank"> Principle Of Perceivable</a>
-><a href="Operable principle.html" target="-blank"> Operable Principle</a>
-<a href="Principle of Understandable.html" target="-blank"> Principle of Understandable</a>
-<a href="Principle of Robust.html" target="-blank"> Principle of Robust</a>
-<a href="Guidelines  and Success Criteria's.html" target="-blank"> Guidelines  and Success Criteria's</a>
-<a href="Guidelines of Perceivable.html" target="-blank"> Guidelines of Perceivable</a>
-<a href="Guidelines of Operable.html" target="-blank"> Guidelines of Operable</a>
-<a href="Guidelines of Understandable.html" target="-blank"> Guidelines of Understandable</a>
-<a href="Guidelines of Robust.html" target="-blank"> Guidelines of Robust</a>
-<a href="conclusion.html" target="-blank"> Conclusion page</a>
-</ul>
-</div>
+
+<nav role="navigation">
+    <ul>
+        <li>
+            <button class="submenu-toggle" aria-expanded="false" aria-controls="accessibility-submenu">
+                Accessibility Topics
+            </button>
+            <ul id="accessibility-submenu" class="submenu" hidden>
+                <li><a href="Types of screen readers.html" target="_blank">Screen reader types</a></li>
+                <li><a href="principles of accessibility.html" target="_blank">Accessibility principles</a></li>
+                <li><a href="Principle Of Perceivable.html" target="_blank">Principle Of Perceivable</a></li>
+                <li><a href="Operable principle.html" target="_blank">Operable Principle</a></li>
+                <li><a href="Principle of Understandable.html" target="_blank">Principle of Understandable</a></li>
+                <li><a href="Principle of Robust.html" target="_blank">Principle of Robust</a></li>
+                <li><a href="conclusion.html" target="_blank">Conclusion page</a></li>
+            </ul>
+        </li>
+        <li><a href="About us.html" target="_blank">About Us</a></li>
+        <li><a href="Contact us.html" target="_blank">Contact Us</a></li>
+    </ul>
+</nav>
+
 <div role="banner">
-<img src="Principle of Perceivable logo.jpg" alt="Principle of Perceivable logo" width="300" hight="200">
+    <img src="Principle of Perceivable logo.jpg" alt="Principle of Perceivable logo" width="100" height="100">
 </div>
+
 <div>
-<form>
-<label for="Search"> Search </label>
-<input type="text" id "Search" aria-label="What do you want to search hear">
-<input type="submit" value="search">
-</form>
+    <form>
+        <label for="Search">Search</label>
+        <input type="text" id="Search" aria-label="What do you want to search here">
+        <input type="submit" value="Search">
+    </form>
 </div>
-<div role="main" id="mainContent" tab index="-1">
-<h1>Principle Of Perceivable</h1>
-<p>The principle of Perceivable is the first guideline of the Web Content Accessibility Guidelines (WCAG) and ensures that all users can perceive the content of a website or application. This principle focuses on making information and user interface components available to the senses of sight, sound, and touch.</p>
-<h2>Text Alternatives (Guideline 1.1)</h2>
-<ul>
-<li>Provide text alternatives for any non-text content (e.g., images, charts, audio).</li>
-<li>Text alternatives ensure that assistive technologies like screen readers can convey the information to visually impaired users.</li>
-</ul>
-<h3>Examples of Text Alternatives</h3>
-<ul>
-<li>Good Practice: Adding alt text for an image, such as <img src="dog.jpg" alt="Golden retriever playing in a park">.</li>
-<li>Bad Practice: Using <img src="chart.png" alt=""> without describing the chart.</li>
-</ul>
-<h2>Time-Based Media (Guideline 1.2)</h2>
-<ul>
-<li>Provide alternatives for audio and video content, such as captions, transcripts, and audio descriptions.</li>
-<li>This ensures content is accessible to people who are deaf, hard of hearing, blind, or visually impaired.</li>
-</ul>
-<h3>Examples of Time-Based Media</h3>
-<ul>
-<li>Good Practice: Including captions for a YouTube video explaining a product.</li>
-<li>Bad Practice: Releasing a podcast without a transcript.</li>
-</ul>
-<h2>Adaptable Content (Guideline 1.3)</h2>
-<ul>
-<li>Create content that can be presented in different ways without losing meaning.</li>
-<li>Use semantic HTML to define headings, lists, and tables to ensure assistive technologies can interpret the content structure correctly.</li>
-</ul>
-<h3>Examples of Adaptable Content</h3>
-<ul>
-<li>Good Practice: Using heading level 1, heading level 2 tags for headings and unorder list, order list for lists.</li>
-<li>Bad Practice: Using bold text for headings without actual <h> tags.</li>
-</ul>
-<h2>Distinguishable (Guideline 1.4)</h2>
-<p>Make content easy to see and hear, including foreground and background contrast, text size, and audio control.</p>
-<h3>Examples of Distinguishable</h3>
-<ul>
-<li>Good Practice: Ensuring a minimum color contrast ratio of 4.5:1 between text and background colors.</li>
-<li>Bad Practice: Using light gray text on a white background.</li>
-</ul>
-<h2>Practical Examples of Perceivable in Action</h2>
-<ol>
-<li>Images and Graphics</li>
-<img src="e-commerce site .jpg" alt="A model wearing a stylish women's fashion top, available for purchase online" wirth="100" hight="100">
-<ul>
-<li>Scenario: An e-commerce site with product images.</li>
-<li>	Perceivable: Include descriptive alt text like "Black leather boots with a 2-inch heel."</li>
-<li>Not Perceivable: Using alt text like "image123.jpg" or leaving it empty.</li>
-</ul>
-<li>Videos</li>
-<img src="Company traning video.jpg" alt="Employee Training and Development" wirth="100" hight="100">
-<ul>
-<li>Scenario: A company training video.</li>
-<li>Perceivable: Adding captions for dialogue and sound effects and providing a text transcript.</li>
-<li>Not Perceivable: Relying solely on the video’s visuals and audio without alternatives.</li>
-</ul>
-<li>Forms</li>
-<img src="Job application form.jpg" alt="job application form with fields for name, email, resume, and cover letter" wirth="100" hight="100">
-<ul>
-<li>Scenario: A job application form.</li>
-<li>Perceivable: Labeling form fields explicitly with "label" tags, like "Email Address".</li>
-<li>Not Perceivable: Using placeholder text as the only indicator of the field's purpose.</li>
-</ul>
-<li>Audio</li>
-<img src="Background Music Player.jpg" alt="Background Music Player" wirth="100" hight="100">
-<ul>
-<li>Scenario: Background music on a website.</li>
-<li>Perceivable: Allowing users to control or mute the audio.</li>
-<li>Not Perceivable: Automatically playing loud music without a pause or mute button.</li>
-</ul>
-</ol>
-<h2>Importance of Perceivable Principle</h2>
-<ul>
-<li>Inclusive Design: Ensures users with disabilities can interact with content effectively.</li>
-<li>Legal Compliance: Helps organizations meet accessibility standards like WCAG 2.1 and laws such as the ADA or Section 508.</li>
-<li>Improved User Experience: Everyone benefits from perceivable content, including users in noisy environments or those with temporary impairments.</li>
-</ul>
-<p>By adhering to the Perceivable principle, developers and designers create digital experiences that are inclusive, accessible, and functional for all users, regardless of their sensory abilities.</p>
-<p>The principle of Operable content begins on the next page. Click the link below to continue reading.</p>
-<a href="Operable principle.html" target=""> Next page principle of Operable</a>
-<a href="principles of accessibility.html" target="-blank"> Previous page principles of accessibility</a>
-</div>
-<div role="contentinfo">
-<a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe"> Whatsap</a>
-<a href=""> Facebook </a>
-<a href=""> linkdin </a>
-<a href="https://youtu.be/WJgc-goUhS0?si=tAwl7lukyYVR6UdE"> You tube </a>
-</div>
+
+<main role="main" id="mainContent" tabindex="-1">
+    <h1>Principle Of Perceivable</h1>
+    <p>The principle of Perceivable is the first guideline of the Web Content Accessibility Guidelines (WCAG) and ensures that all users can perceive the content of a website or application. This principle focuses on making information and user interface components available to the senses of sight, sound, and touch.</p>
+    
+    <h2>Text Alternatives (Guideline 1.1)</h2>
+    <ul>
+        <li>Provide text alternatives for any non-text content (e.g., images, charts, audio).</li>
+        <li>Text alternatives ensure that assistive technologies like screen readers can convey the information to visually impaired users.</li>
+    </ul>
+
+    <h3>Examples of Text Alternatives</h3>
+    <ul>
+        <li>Good Practice: Adding alt text for an image, such as <img src="dog.jpg" alt="Golden retriever playing in a park">.</li>
+        <li>Bad Practice: Using <img src="chart.png" alt=""> without describing the chart.</li>
+    </ul>
+
+    <h2>Time-Based Media (Guideline 1.2)</h2>
+    <ul>
+        <li>Provide alternatives for audio and video content, such as captions, transcripts, and audio descriptions.</li>
+        <li>This ensures content is accessible to people who are deaf, hard of hearing, blind, or visually impaired.</li>
+    </ul>
+
+    <h3>Examples of Time-Based Media</h3>
+    <ul>
+        <li>Good Practice: Including captions for a YouTube video explaining a product.</li>
+        <li>Bad Practice: Releasing a podcast without a transcript.</li>
+    </ul>
+
+    <h2>Adaptable Content (Guideline 1.3)</h2>
+    <ul>
+        <li>Create content that can be presented in different ways without losing meaning.</li>
+        <li>Use semantic HTML to define headings, lists, and tables to ensure assistive technologies can interpret the content structure correctly.</li>
+    </ul>
+
+    <h3>Examples of Adaptable Content</h3>
+    <ul>
+        <li>Good Practice: Using heading levels (h1, h2) for headings and <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> for lists.</li>
+        <li>Bad Practice: Using bold text for headings without actual heading tags.</li>
+    </ul>
+
+    <h2>Distinguishable (Guideline 1.4)</h2>
+    <p>Make content easy to see and hear, including foreground and background contrast, text size, and audio control.</p>
+
+    <h3>Examples of Distinguishable</h3>
+    <ul>
+        <li>Good Practice: Ensuring a minimum color contrast ratio of 4.5:1 between text and background colors.</li>
+        <li>Bad Practice: Using light gray text on a white background.</li>
+    </ul>
+
+    <h2>Practical Examples of Perceivable in Action</h2>
+    <ol>
+        <li>Images and Graphics</li>
+        <img src="e-commerce site .jpg" alt="A model wearing a stylish women's fashion top, available for purchase online" width="100" height="100">
+        <ul>
+            <li>Scenario: An e-commerce site with product images.</li>
+            <li>Perceivable: Include descriptive alt text like "Black leather boots with a 2-inch heel."</li>
+            <li>Not Perceivable: Using alt text like "image123.jpg" or leaving it empty.</li>
+        </ul>
+
+        <li>Videos</li>
+        <img src="Company traning video.jpg" alt="Employee Training and Development" width="100" height="100">
+        <ul>
+            <li>Scenario: A company training video.</li>
+            <li>Perceivable: Adding captions for dialogue and sound effects and providing a text transcript.</li>
+            <li>Not Perceivable: Relying solely on the video’s visuals and audio without alternatives.</li>
+        </ul>
+
+        <li>Forms</li>
+        <img src="Job application form.jpg" alt="Job application form with fields for name, email, resume, and cover letter" width="100" height="100">
+        <ul>
+            <li>Scenario: A job application form.</li>
+            <li>Perceivable: Labeling form fields explicitly with "label" tags, like "Email Address".</li>
+            <li>Not Perceivable: Using placeholder text as the only indicator of the field's purpose.</li>
+        </ul>
+
+        <li>Audio</li>
+        <img src="Background Music Player.jpg" alt="Background Music Player" width="100" height="100">
+        <ul>
+            <li>Scenario: Background music on a website.</li>
+            <li>Perceivable: Allowing users to control or mute the audio.</li>
+            <li>Not Perceivable: Automatically playing loud music without a pause or mute button.</li>
+        </ul>
+    </ol>
+
+    <h2>Importance of Perceivable Principle</h2>
+    <ul>
+        <li>Inclusive Design: Ensures users with disabilities can interact with content effectively.</li>
+        <li>Legal Compliance: Helps organizations meet accessibility standards like WCAG 2.1 and laws such as the ADA or Section 508.</li>
+        <li>Improved User Experience: Everyone benefits from perceivable content, including users in noisy environments or those with temporary impairments.</li>
+    </ul>
+
+    <p>By adhering to the Perceivable principle, developers and designers create digital experiences that are inclusive, accessible, and functional for all users, regardless of their sensory abilities.</p>
+    <p>The principle of Operable content begins on the next page. Click the link below to continue reading.</p>
+
+    <a href="Operable principle.html">Next page: Principle of Operable</a><br>
+    <a href="principles of accessibility.html" target="_blank">Previous page: Principles of Accessibility</a>
+</main>
+
+<footer role="contentinfo">
+    <a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe">WhatsApp</a>
+    <a href="#">Facebook</a>
+    <a href="#">LinkedIn</a>
+    <a href="https://youtu.be/WJgc-goUhS0?si=tAwl7lukyYVR6UdE">YouTube</a>
+</footer>
+
 </body>
 </html>
