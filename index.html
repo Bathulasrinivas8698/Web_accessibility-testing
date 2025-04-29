@@ -7,35 +7,45 @@
     <meta name="keywords" content="Web Accessibility, Disabilities, Screen Readers, Inclusive Design, Accessibility Features">
     <meta name="author" content="Your Name">
     <title>Understanding Web Accessibility</title>
-        <link rel="stylesheet" href="landmarks.css">
-    <link rel="stylesheet" href="headings.css">
-    <link rel="stylesheet" href="images.css">
-    <link rel="stylesheet" href="links-buttons.css">
-    <script src="menu.js"></script>
+    <link rel="stylesheet" href="CSS/landmarks.css">
+    <link rel="stylesheet" href="CSS/headings.css">
+    <link rel="stylesheet" href="CSS/images.css">
+    <link rel="stylesheet" href="CSS/links-buttons.css">
+    <script src="JS/menu.js" defer></script>
 </head>
 <body>
 
     <div id="skipnav"><a href="#mainContent">Skip to main content</a></div>
 
+    <!-- Navigation Menu -->
     <nav role="navigation">
         <ul>
+            <li>
+                <button class="submenu-toggle" aria-expanded="false" aria-controls="accessibility-submenu">
+                    Accessibility Topics
+                </button>
+                <ul id="accessibility-submenu" class="submenu" hidden>
+                    <li><a href="Types of screen readers.html" target="_blank">Screen reader types</a></li>
+                    <li><a href="principles of accessibility.html" target="_blank">Accessibility principles</a></li>
+                    <li><a href="Principle Of Perceivable.html" target="_blank">Principle Of Perceivable</a></li>
+                    <li><a href="Operable principle.html" target="_blank">Operable Principle</a></li>
+                    <li><a href="Principle of Understandable.html" target="_blank">Principle of Understandable</a></li>
+                    <li><a href="Principle of Robust.html" target="_blank">Principle of Robust</a></li>
+                    <li><a href="conclusion.html" target="_blank">Conclusion page</a></li>
+                </ul>
+            </li>
             <li><a href="index.html" target="_blank">Home</a></li>
             <li><a href="About us.html" target="_blank">About Us</a></li>
             <li><a href="Contact us.html" target="_blank">Contact Us</a></li>
-            <li><a href="Types of screen readers.html" target="_blank">Screen Reader Types</a></li>
-            <li><a href="principles of accessibility.html" target="_blank">Accessibility Principles</a></li>
-            <li><a href="Principle Of Perceivable.html" target="_blank">Principle Of Perceivable</a></li>
-            <li><a href="Operable principle.html" target="_blank">Operable Principle</a></li>
-            <li><a href="Principle of Understandable.html" target="_blank">Principle of Understandable</a></li>
-            <li><a href="Principle of Robust.html" target="_blank">Principle of Robust</a></li>
-            <li><a href="conclusion.html" target="_blank">Conclusion Page</a></li>
         </ul>
     </nav>
 
+    <!-- Banner Section -->
     <header role="banner">
-        <img src="Web Accessibility Logo.jpg" alt="Web Accessibility Logo" width="100" height="100">
+        <img class="logo" src="Web Accessibility Logo.jpg" alt="Web Accessibility Logo" width="100" height="100">
     </header>
 
+    <!-- Search Bar -->
     <section class="search-bar">
         <form>
             <label for="search">Search</label>
@@ -44,9 +54,10 @@
         </form>
     </section>
 
+    <!-- Main Content -->
     <main role="main" id="mainContent" tabindex="-1">
         <h1>Understanding of Accessibility</h1>
-        <img src="wheelchair.jpg" alt="A person with a disability sitting in front of a computer, using a screen reader and braille display to access web content" width="100" height="100">
+        <img class="right-align" src="wheelchair.jpg" alt="A person with a disability sitting in front of a computer, using a screen reader and braille display to access web content" width="100" height="100">
         <p>Accessibility refers to the ability to access and use things, such as products, services, and environments, by people of all abilities.</p>
 
         <h2>Example of Accessibility</h2>
@@ -167,6 +178,7 @@
         <a href="Types of screen readers.html" target="_blank">Next page: Types of Screen Reader</a>
     </main>
 
+    <!-- Footer Section -->
     <footer role="contentinfo">
         <a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe">WhatsApp</a>
         <a href="#">Facebook</a>
@@ -175,4 +187,4 @@
     </footer>
 
 </body>
-</html>
+</html lang="en">
