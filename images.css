@@ -1,14 +1,114 @@
-/* Image Styles */
+/* General styling for all images */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     display: block;
-    margin: 10px auto;
+    margin: 10px auto; /* Centering margin for general images */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    object-fit: cover; /* Ensure the image scales properly inside its container */
 }
 
-.border-image {
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    cursor: pointer; /* Add pointer cursor for better user experience */
+}
+
+/* Align specific images to the right */
+img.right-align {
+    margin: 10px 0; /* Top and bottom margin */
+    float: right; /* Align images to the right side of the page */
+    display: block;
+    clear: both; /* Prevent float overlap */
+    border: 2px solid #ccc; /* Optional border for right-aligned images */
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Align specific images to the left */
+img.left-align {
+    margin: 10px 0; /* Top and bottom margin */
+    float: left; /* Align images to the left side of the page */
+    display: block;
+    clear: both; /* Prevent float overlap */
+    border: 2px solid #ccc; /* Optional border for left-aligned images */
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Centering specific images */
+img.center-align {
+    display: block;
+    margin: 20px auto; /* Center-align with custom margin */
+    border: 2px solid #004080; /* Optional border for centered images */
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f0f8ff; /* Light blue background for centered images */
+}
+
+/* Specific styling for the logo image */
+img.logo {
+    display: block;
+    margin: 10px auto; /* Center logo */
+    height: 50px;
+    width: 50px;
+    object-fit: contain; /* Ensure the logo scales nicely */
+}
+
+/* Styling for bordered images */
+img.border-image {
     border: 3px solid #004080;
     padding: 5px;
     border-radius: 10px;
+    background-color: #f0f8ff; /* Light blue background inside the border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for bordered images */
+}
+
+/* Full-width images for banners or large content */
+img.full-width {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: none; /* No border for full-width images */
+    border-radius: 0; /* Remove rounded edges for full-width images */
+}
+
+/* Circle-shaped images */
+img.circle {
+    border-radius: 50%; /* Make the image circular */
+    width: 100px; /* Specific width for circular images */
+    height: 100px; /* Specific height for circular images */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    border: 3px solid #0077cc; /* Optional border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Grayscale effect for images */
+img.grayscale {
+    filter: grayscale(100%); /* Apply grayscale effect */
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+img.grayscale:hover {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+/* Responsive images for smaller screens */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    img.right-align,
+    img.left-align {
+        float: none; /* Disable float on smaller screens */
+        display: block;
+        margin: 10px auto; /* Center-align on smaller devices */
+    }
 }
