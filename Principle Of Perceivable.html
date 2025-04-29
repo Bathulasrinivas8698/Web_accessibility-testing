@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principle Of Perceivable</title>
     <link rel="stylesheet" href="landmarks.css">
     <link rel="stylesheet" href="headings.css">
     <link rel="stylesheet" href="images.css">
     <link rel="stylesheet" href="links-buttons.css">
-    <script src="menu.js"></script>
+    <script src="menu.js" defer></script>
 </head>
 <body>
 
@@ -35,7 +36,7 @@
 </nav>
 
 <div role="banner">
-    <img src="Principle of Perceivable logo.jpg" alt="Principle of Perceivable logo" width="100" height="100">
+    <img class="logo" src="Principle of Perceivable logo.jpg" alt="Principle of Perceivable logo">
 </div>
 
 <div>
@@ -58,8 +59,8 @@
 
     <h3>Examples of Text Alternatives</h3>
     <ul>
-        <li>Good Practice: Adding alt text for an image, such as <img src="dog.jpg" alt="Golden retriever playing in a park">.</li>
-        <li>Bad Practice: Using <img src="chart.png" alt=""> without describing the chart.</li>
+        <li>Good Practice: Adding alt text for an image, such as <img class="center-align" src="dog.jpg" alt="Golden retriever playing in a park">.</li>
+        <li>Bad Practice: Using <img class="center-align" src="chart.png" alt=""> without describing the chart.</li>
     </ul>
 
     <h2>Time-Based Media (Guideline 1.2)</h2>
@@ -80,6 +81,7 @@
         <li>Use semantic HTML to define headings, lists, and tables to ensure assistive technologies can interpret the content structure correctly.</li>
     </ul>
 
+
     <h3>Examples of Adaptable Content</h3>
     <ul>
         <li>Good Practice: Using heading levels (h1, h2) for headings and <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> for lists.</li>
@@ -98,7 +100,7 @@
     <h2>Practical Examples of Perceivable in Action</h2>
     <ol>
         <li>Images and Graphics</li>
-        <img src="e-commerce site .jpg" alt="A model wearing a stylish women's fashion top, available for purchase online" width="100" height="100">
+        <img class="center-align" src="e-commerce site.jpg" alt="A model wearing a stylish women's fashion top, available for purchase online">
         <ul>
             <li>Scenario: An e-commerce site with product images.</li>
             <li>Perceivable: Include descriptive alt text like "Black leather boots with a 2-inch heel."</li>
@@ -106,7 +108,7 @@
         </ul>
 
         <li>Videos</li>
-        <img src="Company traning video.jpg" alt="Employee Training and Development" width="100" height="100">
+        <img class="center-align" src="Company training video.jpg" alt="Employee Training and Development">
         <ul>
             <li>Scenario: A company training video.</li>
             <li>Perceivable: Adding captions for dialogue and sound effects and providing a text transcript.</li>
@@ -114,7 +116,7 @@
         </ul>
 
         <li>Forms</li>
-        <img src="Job application form.jpg" alt="Job application form with fields for name, email, resume, and cover letter" width="100" height="100">
+        <img class="center-align" src="Job application form.jpg" alt="Job application form with fields for name, email, resume, and cover letter">
         <ul>
             <li>Scenario: A job application form.</li>
             <li>Perceivable: Labeling form fields explicitly with "label" tags, like "Email Address".</li>
@@ -122,7 +124,7 @@
         </ul>
 
         <li>Audio</li>
-        <img src="Background Music Player.jpg" alt="Background Music Player" width="100" height="100">
+        <img class="center-align" src="Background Music Player.jpg" alt="Background Music Player">
         <ul>
             <li>Scenario: Background music on a website.</li>
             <li>Perceivable: Allowing users to control or mute the audio.</li>
@@ -145,9 +147,9 @@
 </main>
 
 <footer role="contentinfo">
-    <a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe">WhatsApp</a>
-    <a href="#">Facebook</a>
-    <a href="#">LinkedIn</a>
+    <a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe">WhatsApp</a><br>
+    <a href="#">Facebook</a><br>
+    <a href="#">LinkedIn</a><br>
     <a href="https://youtu.be/WJgc-goUhS0?si=tAwl7lukyYVR6UdE">YouTube</a>
 </footer>
 
