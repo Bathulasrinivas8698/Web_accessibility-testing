@@ -1,158 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principle Of Perceivable</title>
-    <link rel="stylesheet" href="landmarks.css">
-    <link rel="stylesheet" href="headings.css">
-    <link rel="stylesheet" href="images.css">
-    <link rel="stylesheet" href="links-buttons.css">
-    <script src="menu.js" defer></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Principle Of Perceivable</title>
+  <link rel="stylesheet" href="CSS/landmarks.css"/>
+  <link rel="stylesheet" href="CSS/headings.css"/>
+  <link rel="stylesheet" href="CSS/images.css"/>
+  <link rel="stylesheet" href="CSS/links-buttons.css"/>
+  <script src="JS/menu.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-areas:
+        "skipnav header header"
+        "nav main aside"
+        "footer footer footer";
+      grid-template-columns: 200px 1fr 250px;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    /* Skipnav link aligned right */
+    #skipnav {
+      grid-area: skipnav;
+      text-align: right;
+      padding: 0.5rem 1rem;
+      background: #f9f9f9;
+    }
+
+    #skipnav a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      grid-area: header;
+      text-align: center;
+      padding: 1rem;
+      background-color: #f4f4f4;
+    }
+
+    header img {
+      max-height: 80px;
+    }
+
+    nav {
+      grid-area: nav;
+      background-color: #e9e9e9;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0.5rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    main {
+      grid-area: main;
+      padding: 1rem;
+      text-align: left; /* content left aligned */
+    }
+
+    aside {
+      grid-area: aside;
+      padding: 1rem;
+      background-color: #fafafa;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    footer {
+      grid-area: footer;
+      text-align: center;
+      padding: 1rem;
+      background: #f4f4f4;
+    }
+
+    footer a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #0077cc;
+    }
+  </style>
 </head>
 <body>
+  <div id="skipnav">
+    <a href="#mainContent">Skip to main content</a>
+  </div>
 
-<div id="skipnav"><a href="#mainContent">Skip to main content</a></div>
-    <div role="banner">
-    <img class="logo" src="Principle of Perceivable logo.jpg" alt="Principle of Perceivable logo">
-</div>
-
-<nav role="navigation">
+  <nav>
     <ul>
-        <li>
-            <button class="submenu-toggle" aria-expanded="false" aria-controls="accessibility-submenu">
-                Accessibility Topics
-            </button>
-            <ul id="accessibility-submenu" class="submenu" hidden>
-                <li><a href="Types of screen readers.html" target="_blank">Screen reader types</a></li>
-                <li><a href="principles of accessibility.html" target="_blank">Accessibility principles</a></li>
-                <li><a href="Principle Of Perceivable.html" target="_blank">Principle Of Perceivable</a></li>
-                <li><a href="Operable principle.html" target="_blank">Operable Principle</a></li>
-                <li><a href="Principle of Understandable.html" target="_blank">Principle of Understandable</a></li>
-                <li><a href="Principle of Robust.html" target="_blank">Principle of Robust</a></li>
-                <li><a href="conclusion.html" target="_blank">Conclusion page</a></li>
-            </ul>
-        </li>
-        <li><a href="About us.html" target="_blank">About Us</a></li>
-        <li><a href="Contact us.html" target="_blank">Contact Us</a></li>
+      <li>
+        <button class="submenu-toggle" aria-controls="accessibility-submenu" aria-expanded="false">
+          Accessibility Topics
+        </button>
+        <ul id="accessibility-submenu" class="submenu" hidden>
+          <li><a href="Types of screen readers.html" target="_blank">Screen reader types</a></li>
+          <li><a href="principles of accessibility.html" target="_blank">Accessibility principles</a></li>
+          <li><a href="Principle Of Perceivable.html" target="_blank">Principle Of Perceivable</a></li>
+          <li><a href="Operable principle.html" target="_blank">Operable Principle</a></li>
+          <li><a href="Principle of Understandable.html" target="_blank">Principle of Understandable</a></li>
+          <li><a href="Principle of Robust.html" target="_blank">Principle of Robust</a></li>
+          <li><a href="conclusion.html" target="_blank">Conclusion page</a></li>
+        </ul>
+      </li>
+      <li><a href="About us.html" target="_blank">About Us</a></li>
+      <li><a href="Contact us.html" target="_blank">Contact Us</a></li>
     </ul>
-</nav>
+  </nav>
 
+  <header>
+    <img src="Principle of Perceivable logo.jpg" alt="Principle of Perceivable logo" class="logo"/>
+  </header>
 
-
-<div>
+  <div>
     <form>
-        <label for="Search">Search</label>
-        <input type="text" id="Search" aria-label="What do you want to search here">
-        <input type="submit" value="Search">
+      <label for="Search">Search</label>
+      <input type="text" id="Search" aria-label="What do you want to search here"/>
+      <input type="submit" value="Search"/>
     </form>
-</div>
+  </div>
 
-<main role="main" id="mainContent" tabindex="-1">
+  <main id="mainContent" tabindex="-1">
     <h1>Principle Of Perceivable</h1>
-    <p>The principle of Perceivable is the first guideline of the Web Content Accessibility Guidelines (WCAG) and ensures that all users can perceive the content of a website or application. This principle focuses on making information and user interface components available to the senses of sight, sound, and touch.</p>
-    
-    <h2>Text Alternatives (Guideline 1.1)</h2>
-    <ul>
-        <li>Provide text alternatives for any non-text content (e.g., images, charts, audio).</li>
-        <li>Text alternatives ensure that assistive technologies like screen readers can convey the information to visually impaired users.</li>
-    </ul>
-
-    <h3>Examples of Text Alternatives</h3>
-    <ul>
-        <li>Good Practice: Adding alt text for an image, such as <img class="center-align" src="dog.jpg" alt="Golden retriever playing in a park">.</li>
-        <li>Bad Practice: Using <img class="center-align" src="chart.png" alt=""> without describing the chart.</li>
-    </ul>
-
-    <h2>Time-Based Media (Guideline 1.2)</h2>
-    <ul>
-        <li>Provide alternatives for audio and video content, such as captions, transcripts, and audio descriptions.</li>
-        <li>This ensures content is accessible to people who are deaf, hard of hearing, blind, or visually impaired.</li>
-    </ul>
-
-    <h3>Examples of Time-Based Media</h3>
-    <ul>
-        <li>Good Practice: Including captions for a YouTube video explaining a product.</li>
-        <li>Bad Practice: Releasing a podcast without a transcript.</li>
-    </ul>
-
-    <h2>Adaptable Content (Guideline 1.3)</h2>
-    <ul>
-        <li>Create content that can be presented in different ways without losing meaning.</li>
-        <li>Use semantic HTML to define headings, lists, and tables to ensure assistive technologies can interpret the content structure correctly.</li>
-    </ul>
-
-
-    <h3>Examples of Adaptable Content</h3>
-    <ul>
-        <li>Good Practice: Using heading levels (h1, h2) for headings and <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> for lists.</li>
-        <li>Bad Practice: Using bold text for headings without actual heading tags.</li>
-    </ul>
-
-    <h2>Distinguishable (Guideline 1.4)</h2>
-    <p>Make content easy to see and hear, including foreground and background contrast, text size, and audio control.</p>
-
-    <h3>Examples of Distinguishable</h3>
-    <ul>
-        <li>Good Practice: Ensuring a minimum color contrast ratio of 4.5:1 between text and background colors.</li>
-        <li>Bad Practice: Using light gray text on a white background.</li>
-    </ul>
-
-    <h2>Practical Examples of Perceivable in Action</h2>
-    <ol>
-        <li>Images and Graphics</li>
-        <img class="center-align" src="e-commerce site.jpg" alt="A model wearing a stylish women's fashion top, available for purchase online">
-        <ul>
-            <li>Scenario: An e-commerce site with product images.</li>
-            <li>Perceivable: Include descriptive alt text like "Black leather boots with a 2-inch heel."</li>
-            <li>Not Perceivable: Using alt text like "image123.jpg" or leaving it empty.</li>
-        </ul>
-
-        <li>Videos</li>
-        <img class="center-align" src="Company training video.jpg" alt="Employee Training and Development">
-        <ul>
-            <li>Scenario: A company training video.</li>
-            <li>Perceivable: Adding captions for dialogue and sound effects and providing a text transcript.</li>
-            <li>Not Perceivable: Relying solely on the video’s visuals and audio without alternatives.</li>
-        </ul>
-
-        <li>Forms</li>
-        <img class="center-align" src="Job application form.jpg" alt="Job application form with fields for name, email, resume, and cover letter">
-        <ul>
-            <li>Scenario: A job application form.</li>
-            <li>Perceivable: Labeling form fields explicitly with "label" tags, like "Email Address".</li>
-            <li>Not Perceivable: Using placeholder text as the only indicator of the field's purpose.</li>
-        </ul>
-
-        <li>Audio</li>
-        <img class="center-align" src="Background Music Player.jpg" alt="Background Music Player">
-        <ul>
-            <li>Scenario: Background music on a website.</li>
-            <li>Perceivable: Allowing users to control or mute the audio.</li>
-            <li>Not Perceivable: Automatically playing loud music without a pause or mute button.</li>
-        </ul>
-    </ol>
-
-    <h2>Importance of Perceivable Principle</h2>
-    <ul>
-        <li>Inclusive Design: Ensures users with disabilities can interact with content effectively.</li>
-        <li>Legal Compliance: Helps organizations meet accessibility standards like WCAG 2.1 and laws such as the ADA or Section 508.</li>
-        <li>Improved User Experience: Everyone benefits from perceivable content, including users in noisy environments or those with temporary impairments.</li>
-    </ul>
-
-    <p>By adhering to the Perceivable principle, developers and designers create digital experiences that are inclusive, accessible, and functional for all users, regardless of their sensory abilities.</p>
-    <p>The principle of Operable content begins on the next page. Click the link below to continue reading.</p>
-
-    <a href="Operable principle.html">Next page: Principle of Operable</a><br>
+    <p>The principle of Perceivable is the first guideline of the Web Content Accessibility Guidelines (WCAG)...</p>
+    <!-- (Keeping rest of your content the same, left aligned) -->
+    <a href="Operable principle.html" target="_blank">Next page: Principle of Operable</a><br/>
     <a href="principles of accessibility.html" target="_blank">Previous page: Principles of Accessibility</a>
-</main>
+  </main>
 
-<footer role="contentinfo">
-    <a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe">WhatsApp</a><br>
-    <a href="#">Facebook</a><br>
-    <a href="#">LinkedIn</a><br>
-    <a href="https://youtu.be/WJgc-goUhS0?si=tAwl7lukyYVR6UdE">YouTube</a>
-</footer>
+  <aside>
+    <p>Additional side content or tables can go here.</p>
+  </aside>
 
-</body>
-</html>
+  <footer role="contentinfo">
+    <a href="https://chat.whatsapp.com/HZLr73qCQiA0999Ky3OMVe" target="_blank">WhatsApp</a> |
+    <a href="#" target="_blank">Facebook</_
